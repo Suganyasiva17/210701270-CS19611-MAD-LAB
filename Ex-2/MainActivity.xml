@@ -1,0 +1,70 @@
+package org.rajalakshmi.simplecalculator
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+
+class MainActivity : AppCompatActivity() {
+    var input1: Double=0.0
+    var input2: Double=0.0
+    var addition:Boolean=false
+    var subtraction:Boolean=false
+    var multiplication:Boolean=false
+    var division:Boolean=false
+    var decimal:Boolean=false
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        val tvExpression : TextView=findViewById(R.id.tvExpression)
+        val tvResult : TextView=findViewById(R.id.tvResult)
+        val btZero : Button = findViewById(R.id.btZero)
+        val btOne : Button = findViewById(R.id.btOne)
+        val btTwo : Button = findViewById(R.id.btTwo)
+        val btThree : Button = findViewById(R.id.btThree)
+        val btFour : Button = findViewById(R.id.btFour)
+        val btFive : Button = findViewById(R.id.btFive)
+        val btSix : Button = findViewById(R.id.btSix)
+        val btSeven : Button = findViewById(R.id.btSeven)
+        val btEight : Button = findViewById(R.id.btEight)
+        val btNine : Button = findViewById(R.id.btNine)
+        val btEqualTo : Button = findViewById(R.id.btEqualto)
+        val btDivision : Button = findViewById(R.id.btDivision)
+        val btMultiplication : Button = findViewById(R.id.btMultiplication)
+        val btAddition : Button = findViewById(R.id.btAddition)
+        val btSubtraction : Button = findViewById(R.id.btSubtraction)
+        val btPoint : Button = findViewById(R.id.btPoint)
+        val btClear : Button = findViewById(R.id.btClear)
+        btZero.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}0")
+        }
+        btOne.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}1")
+        }
+        btTwo.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}2")
+        }
+        btThree.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}3")
+        }
+        btFour.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}4")
+        }
+        btFive.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}5")
+        }
+        btSix.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}6")
+        }
+        btSeven.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}7")
+        }
+        btEight.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}8")
+        }
+        btNine.setOnClickListener {
+            tvExpression.setText("${tvExpression.text}9")
+        }
+    }
+}
