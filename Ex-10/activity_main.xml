@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/networkoperatorname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network Operator Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etnoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/phonetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Type"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etphonetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/netwrokcountryiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network Country ISO"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etniso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/simcountryiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIM Country ISO"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etsimiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/devicesoftwareversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Device Software Version"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etsoftwareversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:text="GET TELEPHONY SERVICE" />
+</LinearLayout>
